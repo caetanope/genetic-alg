@@ -1,0 +1,8 @@
+{
+	"numberOfEpochs": "1000",
+	"populationNumber": "1000",
+	"championsRate": "10",
+	"randomsRate": "10",
+	"timeout": "20",
+	"goal": "2000000"
+}

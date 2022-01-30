@@ -1,0 +1,28 @@
+@startuml
+start
+fork
+    :get number of epochs;
+    fork again
+    :get population number;
+    fork again
+    :get champions rate;
+    fork again
+    :get randoms rate;
+    fork again
+    :get originals rate;
+endfork
+
+:generate seeds;
+while ( ) is (criteria is not met)
+    fork
+        :mate population;
+        :mutate;
+        fork again    
+        :generate randons;
+    endfork
+    
+    :calculate fitness;
+    :select seeds for next epoch;
+endwhile (criteria met)
+stop
+@endum
